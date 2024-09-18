@@ -1,0 +1,4 @@
+REGI #HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize\\SystemUsesLightTheme,&RegDat
+CALC -base=10 #RegDat=%RegDat%
+IFEX #%RegDat%=0,TEAM REGI #HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize\\SystemUsesLightTheme=1|MESS 当前是浅色模式@提示 #OK *3000! TEAM REGI #HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize\\SystemUsesLightTheme=0|MESS 当前是深色模式@提示 #OK *3000
+IFEX #%RegDat%=0,REGI #HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize\\AppsUseLightTheme=1! REGI #HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize\\AppsUseLightTheme=0
