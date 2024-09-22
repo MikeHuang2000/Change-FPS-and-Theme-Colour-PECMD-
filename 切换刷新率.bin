@@ -1,0 +1,3 @@
+﻿DISP ? =0 &cur
+MSTR &curf=<4>%cur%
+IFEX #%curf%=240,TEAM MESS 切换到60HZ@提示 #OK *3000| DISP f60! TEAM MESS 切换到240Hz@提示 #OK *3000| DISP f240

@@ -1,3 +1,0 @@
-﻿DISP ? =0 &cur
-MSTR &curf=-1,2,%cur%
-IFEX #%curf%=40,TEAM DISP f60|MESS 当前FPS是60@提示 #OK *3000! TEAM DISP f240|MESS 当前FPS是240@提示 #OK *3000
